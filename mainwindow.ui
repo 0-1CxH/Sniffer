@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1266</width>
+    <height>891</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="NICOption">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>681</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #565656,stop:1 #787878);
+
+border-radius: 15px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="packTable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>1171</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 235, 235);
+
+border-radius: 10px;
+
+border:1px solid #242424;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="packBin">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>570</y>
+      <width>801</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #787878,stop:1 #565656);
+
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startBtn">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>40</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+border-radius:20px;
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+
+	font: 75 12pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+border:3px solid #242424;
+color:black;
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopBtn">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>100</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+border-radius:20px;
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+
+	font: 75 12pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+border:3px solid #242424;
+color:black;
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>END</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>681</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+color: rgb(0, 0, 0);
+border-radius:15px;
+
+
+background: rgb(214, 214, 214);
+
+	font: &quot;Century Gothic&quot;;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stat_Btn">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>40</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:black;
+padding:5px;
+border-radius:20px;
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+
+	font: 75 12pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+color:#DCDCDC;
+border:3px solid #242424;
+
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>STATISTICS</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textDisplay">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>570</y>
+      <width>361</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #232323,stop:1 #454545);
+
+border-radius: 10px;
+
+
+	font: 75 10pt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spoof_btn">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>100</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:black;
+padding:5px;
+border-radius:20px;
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+
+	font: 75 12pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+color:#DCDCDC;
+border:3px solid #242424;
+
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SPOOF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gate_ip">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>590</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+color: rgb(0, 0, 0);
+border-radius:15px;
+
+
+background: rgb(214, 214, 214);
+
+	font: &quot;Century Gothic&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gate_mac">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>630</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+color: rgb(0, 0, 0);
+border-radius:15px;
+
+
+background: rgb(214, 214, 214);
+
+	font: &quot;Century Gothic&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="victim_ip">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>670</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+color: rgb(0, 0, 0);
+border-radius:15px;
+
+
+background: rgb(214, 214, 214);
+
+	font: &quot;Century Gothic&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="victim_mac">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>710</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+color: rgb(0, 0, 0);
+border-radius:15px;
+
+
+background: rgb(214, 214, 214);
+
+	font: &quot;Century Gothic&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spf_start_btn">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>760</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+border-radius:20px;
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+
+	font: 75 10pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+border:3px solid #242424;
+color:black;
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>COMMENCE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spf_stop_btn">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>760</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-style:none;
+border:1px solid #242424;
+color:#DCDCDC;
+padding:5px;
+border-radius:20px;
+
+
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #484848,stop:1 #383838);
+
+	font: 75 10pt &quot;Century Gothic&quot;;
+
+
+}
+
+QPushButton:hover {
+
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #B7B7B7,stop:1 #D7D7D7);
+border:3px solid #242424;
+color:black;
+padding:5px;
+    
+    border-color: #444444;
+
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: lightgray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>CEASE</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1266</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
